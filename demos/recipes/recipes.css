@@ -183,17 +183,7 @@
 
 
 
-.recipe-items .card img,
-.rotating {
-	transform: rotate(0deg);
-	transition: transform 1.5s linear;
-}
 
-.recipe-items .card:hover img,
-.rotating:hover {
-	transform: rotate(360deg);
-	transition: transform 20s linear;
-}
 
 .recipe-items .row  {
 	border-top: 1px solid #EEE;
