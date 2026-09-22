@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+	<base href="https://vega.rs/">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="SemiColonWeb">
+
+	<!-- Stylesheets
+	============================================= -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&amp;display=swap" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="css/dark.css" type="text/css">
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="icon" href="images/favicon.ico">
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+	<!-- ADD-ONS CSS FILES -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/addons/revolution.addon.liquideffect.css">
+
+	<!--  Recipes Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css"> <!-- Theme Color -->
+	<link rel="stylesheet" href="demos/recipes/css/fonts.css" type="text/css"> <!-- Theme Font -->
+	<link rel="stylesheet" href="demos/recipes/recipes.css" type="text/css"> <!-- Theme Custom CSS -->
+
+	<style>
+		.dt-shadow{text-shadow:0px 10px 30px rgba(0,0,0,1)}#rev_slider_131_1 .uranus.tparrows{width:50px; height:50px; background:rgba(255,255,255,0)}#rev_slider_131_1 .uranus.tparrows:before{width:50px; height:50px; line-height:50px; font-size:40px; transition:all 0.3s;-webkit-transition:all 0.3s}#rev_slider_131_1 .uranus.tparrows:hover:before{opacity:0.75}.slotholder canvas { height: 100% !important; }
+		.menu-item.current > .menu-link {
+			color: #000000;
+		}
+		
+.recipe-items .card:hover img,
+.rotating:hover{
+			transform: none;
+			transition: none;
+		}
+		#header-wrap::before { width: 64%; }
+	
+.menu-title {
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+        .menu-entry { line-height: 1.55; }
+        .menu-price { color: #333; white-space: nowrap; }
+        .menu-details { color: #555; margin-top: 2px; }
+        .menu-subheading { color: #d43538; font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 700; margin: 18px 0 8px; text-transform: uppercase; }
+        .menu-note { color: #555; margin: 0; line-height: 1.65; }
+        .menu-table-wrap { margin: 8px 0 12px; }
+        .menu-table { margin-bottom: 0; min-width: 650px; }
+        .menu-table thead th { background: #d43538; color: #fff; border-color: #e4e4e4; text-align: center; vertical-align: middle; }
+        .menu-table thead th:first-child { text-align: left; }
+        .menu-table td { border-color: #e4e4e4; vertical-align: middle; }
+        .menu-table tbody tr:nth-child(even) { background: #fafafa; }
+        .menu-table .pizza-price { text-align: center; white-space: nowrap; font-weight: 700; }
+        .pizza-description { color: #666; font-size: 13px; font-style: italic; font-weight: 400; margin-top: 4px; }
+        @media (max-width: 767px) {
+            .accordion-title { font-size: 14px; }
+            .menu-entry, .menu-note { font-size: 14px; }
+        }
+    </style>
+
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>Vega | Ground Floor Restaurant Menu</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header" data-sticky-shrink="false" data-mobile-sticky="true">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html" class="standard-logo"><img src="demos/recipes/images/logo.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo"><img src="demos/recipes/images/logo@2x.png" alt="Canvas Logo"></a>
+						</div>
+<!-- #logo end -->
+
+						<div class="header-misc">
+
+							<!-- Top Search
+							============================================= -->
+							<!-- <div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+							</div>#top-search end -->
+
+						</div>
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewbox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+						<ul class="menu-container">
+								<li class="menu-item"><a class="menu-link" target="_blank" href="https://dostava.vega.rs/?menu_id=WQUBunXJC"><div style="font-family: 'Lato', sans-serif !important;">Delivery</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="jelovniken.html"><div style="font-family: 'Lato', sans-serif !important;">Our offer</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="vegafoodstoreen.html"><div style="font-family: 'Lato', sans-serif !important;">Vega Food Store</div></a></li>
+								
+								
+								
+								<li class="menu-item"><a class="menu-link" href="pekareen.html"><div style="font-family: 'Lato', sans-serif !important;">Bakery Vega</div></a></li>
+								<!-- <li class="menu-item"><a class="menu-link" href="vegaen.html"><div style="font-family: 'Lato', sans-serif !important;">Eng</div></a></li>
+								</li>	 -->
+								<li class="menu-item"><a class="menu-link" href="infoen.html"><div style="font-family: 'Lato', sans-serif !important;">Contact</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="jelovnik.html"><div style="font-family: 'Lato', sans-serif !important;">Srb <img src="srb.png" style="width:25px; height:25px;">
+</div></a></li>
+									
+									
+								
+								<!-- <li class="menu-item"><a class="menu-link" href="#"><div style="font-family: 'Lato', sans-serif !important;">Info</div></a>
+									<ul class="sub-menu-container rounded-bottom">
+										<li class="menu-item"><a class="menu-link" href="info.html"><div style="font-family: 'Lato', sans-serif !important;">Kontakt</div></a></li>
+										 <div class="dropdown-divider my-0"></div>
+										<li class="menu-item"><a class="menu-link" href="info.html"><div style="font-family: 'Lato', sans-serif !important;">Posao</div></a></li>
+										
+										
+									</ul>
+								</li>							 -->
+								<!-- <li class="menu-item"><a class="menu-link" href="demo-recipes-contact.html"><div>Info</div></a></li> -->
+							</ul>
+
+
+						</nav><!-- #primary-menu end -->
+
+						<!-- <form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						</form> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+	
+
+		<!-- Content
+		============================================= -->
+	
+
+	
+		<section id="content">
+			
+			<div class="content-wrap">
+				
+				<div class="container clearfix">
+	
+				<ul class="nav nav-tabs nav-fill" style="  margin-top: -30px;">
+					<li class="nav-item"><a class="nav-link" href="jelovnik-gornji-eng.html" style="color: red;">Restaurant upstairs</a></li>
+					<li class="nav-item"><a class="nav-link active" href="jelovnik-donji-eng.html">Ground floor restaurant</a></li>
+					<li class="nav-item"><a class="nav-link" href="karta-pica-eng.html" style="color: red;">Drinks</a></li>
+					<li class="nav-item"><a class="nav-link " href="" style="color: red;">Bakery</a></li>
+				</ul>
+
+					<div class="portfolio-container">
+ 
+						<div id="portfolio" class="portfolio row gutter-20">
+							 
+
+							<div class="accordion accordion-bg" data-collapsible="true">
+								<div class="portfolio-desc"><h3 style="font-family: 'Lato', sans-serif !important;"><a href="portfolio-single-gallery.html"></a></h3></div>
+<div class="accordion-header accordion-active" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">BREAKFAST</div>
+</div>
+<div class="accordion-content" style="display: block;">
+<div class="menu-entry">
+<span class="menu-title">3 EGGS</span> <span class="menu-price">— 410,-</span><div class="menu-details">3 eggs, domestic cheese and tomato.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH CRISPY BACON</span> <span class="menu-price">— 600,-</span><div class="menu-details">3 eggs, domestic cheese, tomato and crispy bacon.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH HAM</span> <span class="menu-price">— 510,-</span><div class="menu-details">3 eggs, domestic cheese, tomato and ham.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH KAČKAVALJ CHEESE</span> <span class="menu-price">— 540,-</span><div class="menu-details">3 eggs, domestic cheese, tomato and kačkavalj cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH GRILLED VEGETABLES</span> <span class="menu-price">— 490,-</span><div class="menu-details">3 eggs, domestic cheese, tomato and grilled vegetables.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH SAUSAGES</span> <span class="menu-price">— 530,-</span><div class="menu-details">3 eggs, domestic cheese, tomato, mustard and two sausages.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH HOMEMADE BBQ SAUSAGE</span> <span class="menu-price">— 700,-</span><div class="menu-details">3 eggs, domestic cheese, tomato, mustard and homemade BBQ sausage.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS WITH BEER SAUSAGE</span> <span class="menu-price">— 850,-</span><div class="menu-details">3 eggs, domestic cheese, tomato, mustard and beer sausage.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS BENEDICT WITH BACON</span> <span class="menu-price">— 580,-</span><div class="menu-details">Poached eggs with crispy bacon on toasted bread.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EGGS BENEDICT WITH MARINATED SALMON</span> <span class="menu-price">— 770,-</span><div class="menu-details">Poached eggs with marinated salmon on toasted bread with avocado dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OATMEAL WITH FRUIT</span> <span class="menu-price">— 530,-</span><div class="menu-details">410g<br>Oat flakes, chia seeds, flax seeds, almonds, Greek yogurt, almond milk, mixed fruit – banana, pineapple, mixed forest berries (strawberry, blueberry, blackberry), honey.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOMEMADE FRENCH TOAST</span> <span class="menu-price">— 560,-</span><div class="menu-details">Eggs, homemade cheese, tomato, mustard and homemade grill sausage.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GOURMET FRENCH TOAST</span> <span class="menu-price">— 620,-</span><div class="menu-details">French toast with sour cream, ham and pickled cucumbers aromatic filling, baked with cheese and egg topping.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BREAKFAST FROM ŠUMADIJA</span> <span class="menu-price">— 890,-</span><div class="menu-details">Hard-boiled egg, homemade proja, homemade cheese, cream, sausage and ajvar.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ENGLISH BREAKFAST</span> <span class="menu-price">— 920,-</span><div class="menu-details">Two sunny side up eggs, crispy bacon, sausage, toast, red beans, tomato and champignons.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BAKER'S BREAKFAST</span> <span class="menu-price">— 630,-</span><div class="menu-details">Sarajevo pie with grilled vegetables, prosciutto, kulen (flavoured sausage) and sour milk.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">POLENTA</span> <span class="menu-price">— 580,-</span><div class="menu-details">Crispy bacon, clotted cream and cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">YOGHURT CUP</span> <span class="menu-price">— 80,-</span><div class="menu-details">250g<br>Granice 3,2%.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">BREAD SELECTION</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">Homemade Bread Roll 40g</span> <span class="menu-price">— 35,-</span><div class="menu-details">Unleavened wheat dough.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Rustic Bread Roll 40g</span> <span class="menu-price">— 45,-</span><div class="menu-details">Mix of grains and seeds.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Corn Bread Roll 40g</span> <span class="menu-price">— 35,-</span><div class="menu-details">Bread roll made from corn flour.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Rye Bread – slice 55g</span> <span class="menu-price">— 45,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Pizza Bread</span> <span class="menu-price">— 70,-</span><div class="menu-details">Seasoned with rosemary and garlic, or with egg and sesame coating, by choice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Somun</span> <span class="menu-price">— 25,-</span><div class="menu-details">Traditional flatbread.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Tortilla</span> <span class="menu-price">— 90,-</span><div class="menu-details">Greek tortilla.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">ADDITIONAL SIDES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">Crispy Bacon — 50 g</span> <span class="menu-price">— 190,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Ham — 50 g</span> <span class="menu-price">— 100,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Kačkavalj Cheese — 50 g</span> <span class="menu-price">— 130,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Grilled Vegetables — 50 g</span> <span class="menu-price">— 80,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Sausage (1 pc) — 65 g</span> <span class="menu-price">— 60,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Homemade BBQ Sausage — 100 g</span> <span class="menu-price">— 290,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Beer Sausage — 150 g</span> <span class="menu-price">— 440,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Kajmak — 50 g</span> <span class="menu-price">— 180,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Ajvar — 50 g</span> <span class="menu-price">— 190,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Egg (1 pc) — 70 g</span> <span class="menu-price">— 70,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Cheese — 50 g</span> <span class="menu-price">— 120,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Hot Peppers — 40 g</span> <span class="menu-price">— 80,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Eurocrem — 50 g</span> <span class="menu-price">— 100,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Jam — 50 g</span> <span class="menu-price">— 50,-</span>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SANDWICHES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<p class="menu-note"></p>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CLUB SANDWICH</span> <span class="menu-price">— 630,-</span><div class="menu-details">360g<br>Toast bread, chicken 70g, crispy bacon, kačkavalj cheese, tomato and egg, served with fries.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CROISSANT SANDWICH WITH PROSCIUTTO</span> <span class="menu-price">— 590,-</span><div class="menu-details">Croissant from our bakery, cream cheese spread, prosciutto, arugula, mozzarella.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CROISSANT SANDWICH WITH SMOKED TUNA</span> <span class="menu-price">— 590,-</span><div class="menu-details">Croissant from our bakery, pesto sauce, smoked tuna, arugula, sweet corn, tomato.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SANDWICH WITH CURED MEAT AND KAJMAK</span> <span class="menu-price">— 470,-</span><div class="menu-details">Corn lepinja bread, cured meat 60g, boiled egg, tomato, lettuce, kajmak.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – ŠUMADINAC</span> <span class="menu-price">— 470,-</span><div class="menu-details">Fried egg, crispy bacon, kajmak, urnebes salad and tomato.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – GYROS</span> <span class="menu-price">— 480,-</span><div class="menu-details">Gyros meat, tzatziki, domestic cheese, sour cream and tomato.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – CURED MEAT</span> <span class="menu-price">— 370,-</span><div class="menu-details">Cured meat, kačkavalj cheese, lettuce, sour cream and ketchup.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – HAM</span> <span class="menu-price">— 350,-</span><div class="menu-details">Ham, kačkavalj cheese, lettuce, sour cream and ketchup.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – KULEN</span> <span class="menu-price">— 410,-</span><div class="menu-details">Kulen, kačkavalj cheese, lettuce, urnebes and ketchup.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT SANDWICH – TUNA</span> <span class="menu-price">— 370,-</span><div class="menu-details">Tuna, lean kačkavalj cheese, tomato, red onion and lettuce.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BURRITO</span> <span class="menu-price">— 640,-</span><div class="menu-details">320g<br>Tortilla, chicken fillet, sweet corn, red beans, red pepper, chili.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">WRAP – TERIYAKI CHICKEN</span> <span class="menu-price">— 680,-</span><div class="menu-details">320g<br>Tortilla, teriyaki chicken, sour cream, kačkavalj cheese, Greek yogurt, iceberg lettuce, red pepper, honey, sesame, soy sauce.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">WRAP – CRISPY CHICKEN</span> <span class="menu-price">— 660,-</span><div class="menu-details">370g<br>Tortilla, crispy chicken, tzatziki, kačkavalj cheese, Greek yogurt, iceberg lettuce.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">FAST FOOD</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">HAMBURGER</span> <span class="menu-price">— 450,-</span><div class="menu-details">170g<br>Grilled meat.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">XL HAMBURGER</span> <span class="menu-price">— 550,-</span><div class="menu-details">220g<br>Grilled meat.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHEESBURGER</span> <span class="menu-price">— 880,-</span><div class="menu-details">340g<br>Grilled meat.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CEVAP (FIVE PEACES IN A BUN)</span> <span class="menu-price">— 410,-</span><div class="menu-details">150g<br>Barbecue meat.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GOURMET BURGER</span> <span class="menu-price">— 530,-</span><div class="menu-details">200g<br>Grilled meat, hot pepper, cured meat, kačkavalj cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ROLLED CHICKEN SKEWER</span> <span class="menu-price">— 530,-</span><div class="menu-details">200g<br>Chicken fillet wrapped in bacon.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN FILLET</span> <span class="menu-price">— 460,-</span><div class="menu-details">170g<br>Chicken fillet 170g.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VIENNA - CHICKEN</span> <span class="menu-price">— 470,-</span><div class="menu-details">230g<br>Chicken fillet in flatbread, breaded in Vienna style.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN DRUMSTICK</span> <span class="menu-price">— 460,-</span><div class="menu-details">200g<br>Chicken drumstick.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KARAĐORĐE STEAK</span> <span class="menu-price">— 660,-</span><div class="menu-details">260g<br>Pork fillet, dried meat, kashkaval.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KARAĐORĐE CHICKEN STEAK</span> <span class="menu-price">— 540,-</span><div class="menu-details">260g<br>Chicken fillet, dried meat, kashkaval.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">APPETIZERS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">MIX PLATTER</span> <span class="menu-price">— 1.990,-</span><div class="menu-details">490g<br>Selection of meat delicacies and cheeses.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GRILLED MIROČKI CHEESE</span> <span class="menu-price">— 650,-</span><div class="menu-details">120g<br>Grilled Miročki cheese with aromatic sun-dried tomatoes and arugula.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BRUSCHETTA POMODORO</span> <span class="menu-price">— 580,-</span><div class="menu-details">290g<br>Bruschetta with mozzarella, tomato and pesto Genovese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BRUSCHETTA PROSCIUTTO</span> <span class="menu-price">— 580,-</span><div class="menu-details">180g<br>Bruschetta with prosciutto and parmesan.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CAPRESE</span> <span class="menu-price">— 780,-</span><div class="menu-details">340g<br>Mozzarella, tomato, basil and pesto Genovese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GRILLED MUSHROOMS</span> <span class="menu-price">— 310,-</span><div class="menu-details">200g<br>Marinated mushrooms grilled over charcoal.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FRIED KAČKAVALJ CHEESE</span> <span class="menu-price">— 630,-</span><div class="menu-details">310g<br>Fried kačkavalj cheese 200g served with tartar sauce.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">MEAL SALADS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">CAESAR SALAD</span> <span class="menu-price">— 810,-</span><div class="menu-details">400g<br>Mixed green and iceberg lettuce, chicken fillet, egg, cherry tomatoes, croutons, parmesan, crispy bacon, sesame and Caesar dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CORNELIA SALAD</span> <span class="menu-price">— 910,-</span><div class="menu-details">400g<br>Mixed green salad, turkey, peach, red pepper, crispy bacon and dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PROSCIUTTO SALAD</span> <span class="menu-price">— 940,-</span><div class="menu-details">300g<br>Mixed green salad, prosciutto, pear, parmesan, cherry tomatoes, olives, sesame and aceto dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SALMON SALAD</span> <span class="menu-price">— 1.180,-</span><div class="menu-details">430g<br>Iceberg lettuce, salmon, broccoli, red onion and horseradish dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TUNA SALAD</span> <span class="menu-price">— 830,-</span><div class="menu-details">450g<br>Mixed green salad, sweet corn, tuna, lean kačkavalj cheese, olive oil and lemon.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BEEFSTEAK SALAD</span> <span class="menu-price">— 1.250,-</span><div class="menu-details">330g<br>Mixed green salad, beefsteak, cherry tomatoes, hazelnuts and blue cheese dressing.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SOUPS AND CREAM SOUPS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">TOMATO SOUP</span> <span class="menu-price">— 390,-</span><div class="menu-details">300ml<br>Tomato and vegetable soup.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN SOUP</span> <span class="menu-price">— 350,-</span><div class="menu-details">300ml<br>Chicken soup with vegetables.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BROCCOLI CREAM SOUP</span> <span class="menu-price">— 380,-</span><div class="menu-details">300ml<br>Cream soup made from fresh broccoli.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PUMPKIN CREAM SOUP</span> <span class="menu-price">— 350,-</span><div class="menu-details">300ml<br>Cream soup made from fresh pumpkin.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MUSHROOM CREAM SOUP</span> <span class="menu-price">— 380,-</span><div class="menu-details">300ml<br>Cream soup made from fresh mushrooms.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BEEF SOUP</span> <span class="menu-price">— 460,-</span><div class="menu-details">300ml<br>Beef and vegetables.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">READY MEALS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">MOUSSAKA</span> <span class="menu-price">— 450,-</span><div class="menu-details">350g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BAKED BEANS – LEAN</span> <span class="menu-price">— 380,-</span><div class="menu-details">300g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BAKED BEANS WITH SAUSAGE</span> <span class="menu-price">— 540,-</span><div class="menu-details">450g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BEAN SOUP WITH SAUSAGE</span> <span class="menu-price">— 480,-</span><div class="menu-details">500g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HAKE WITH POTATO SALAD</span> <span class="menu-price">— 650,-</span><div class="menu-details">500g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GOULASH</span> <span class="menu-price">— 690,-</span><div class="menu-details">500g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SARMA</span> <span class="menu-price">— 710,-</span><div class="menu-details">500g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LEAN SARMA</span> <span class="menu-price">— 450,-</span><div class="menu-details">440g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STUFFED PEPPERS</span> <span class="menu-price">— 650,-</span><div class="menu-details">300g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LEAN STUFFED PEPPERS</span> <span class="menu-price">— 530,-</span><div class="menu-details">300g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">POTATO PAPRIKASH</span> <span class="menu-price">— 490,-</span><div class="menu-details">400g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PODVARAK</span> <span class="menu-price">— 540,-</span><div class="menu-details">300g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PEAS WITH CHICKEN</span> <span class="menu-price">— 430,-</span><div class="menu-details">350g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MINCED MEAT SCHNITZEL WITH MASHED POTATOES</span> <span class="menu-price">— 620,-</span><div class="menu-details">440g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HUNTER’S SCHNITZELS</span> <span class="menu-price">— 640,-</span><div class="menu-details">560g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PILAV</span> <span class="menu-price">— 410,-</span><div class="menu-details">300g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN DRUMSTICK WITH MASHED POTATOES</span> <span class="menu-price">— 590,-</span><div class="menu-details">450g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MEATBALLS WITH MASHED POTATOES</span> <span class="menu-price">— 650,-</span><div class="menu-details">450g</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">INTERNATIONAL CORNER</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">RAMEN NOODLES WITH CHICKEN</span> <span class="menu-price">— 1.090,-</span><div class="menu-details">490g<br>Ramen noodles prepared with chicken and fresh vegetables in an Asian style.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RAMEN NOODLES WITH SHRIMP</span> <span class="menu-price">— 1.850,-</span><div class="menu-details">450g<br>Ramen noodles prepared with shrimp, broccoli and fresh vegetables in an Asian style.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MEXICAN CHICKEN</span> <span class="menu-price">— 1.050,-</span><div class="menu-details">375g<br>Chicken fillet, red beans, peppers, red onion, corn, chili, salad dressing, beetroot sauce and seasoned crispy tortilla.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GREEK PORK GYROS ON A PLATE</span> <span class="menu-price">— 990,-</span><div class="menu-details">480g<br>Pork meat 150g, tzatziki, iceberg lettuce, tomato, onion and fries as a side dish.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GREEK CHICKEN GYROS ON A PLATE</span> <span class="menu-price">— 910,-</span><div class="menu-details">480g<br>Chicken meat 150g, tzatziki, iceberg lettuce, tomato, onion and fries as a side dish.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GREEK PORK GYROS</span> <span class="menu-price">— 620,-</span><div class="menu-details">370g<br>Pork meat 100g, tzatziki, tomato, onion and fries as a side dish.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GREEK CHICKEN GYROS</span> <span class="menu-price">— 550,-</span><div class="menu-details">370g<br>Chicken meat 100g, tzatziki, tomato, onion and fries as a side dish.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PAELLA</span> <span class="menu-price">— 780,-</span><div class="menu-details">430g<br>Pork (gyros) meat, sausage, rice, vegetables, tomato sauce and hot sauce.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">BURGERS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">VEGA BURGER</span> <span class="menu-price">— 950,-</span><div class="menu-details">350g<br>150g beef burger, served with Dollar Chips.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GOURMET BURGER</span> <span class="menu-price">— 1.050,-</span><div class="menu-details">410g<br>150g beef burger, crispy bacon, egg and Dollar Chips.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN BURGER</span> <span class="menu-price">— 720,-</span><div class="menu-details">360g<br>150g chicken burger, cheddar cheese, tomato, iceberg lettuce, onion and Dollar Chips.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VEGETARIAN BURGER</span> <span class="menu-price">— 1.200,-</span><div class="menu-details">380g<br>Vegetable patty burger 120g, cheddar cheese, iceberg lettuce, tomato, onion, avocado sauce, served with fries.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">PASTA I RISOTTO</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">PASTA CON POLLO</span> <span class="menu-price">— 910,-</span><div class="menu-details">430g<br>Tagliatelle, chicken fillet, crispy bacon, Grana Padano, tomato sauce, black and white garlic.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TAGLIATELLE WITH TURKEY AND PESTO SAUCE</span> <span class="menu-price">— 970,-</span><div class="menu-details">400g<br>Tagliatelle with turkey, pesto sauce and Grana Padano.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASTA QUATTRO FORMAGGI</span> <span class="menu-price">— 870,-</span><div class="menu-details">430g<br>Tagliatelle, Grana Padano, gorgonzola, mozzarella and kačkavalj cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASTA CARBONARA</span> <span class="menu-price">— 810,-</span><div class="menu-details">450g<br>Spaghetti, bacon, garlic, egg and Grana Padano.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASTA BOLOGNESE</span> <span class="menu-price">— 790,-</span><div class="menu-details">450g<br>Spaghetti, Bolognese sauce, tomato sauce and Grana Padano.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASTA ARRABBIATA</span> <span class="menu-price">— 760,-</span><div class="menu-details">450g<br>Penne, red onion, tomato sauce, chili and Grana Padano.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASTA 5P</span> <span class="menu-price">— 1.030,-</span><div class="menu-details">445g<br>Penne, prosciutto, chicken, Grana Padano, cream and porcini mushrooms.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RISOTTO WITH CHICKEN AND ALMONDS</span> <span class="menu-price">— 940,-</span><div class="menu-details">460g<br>Rice, cooking cream, garlic, chanterelles, porcini mushrooms, champignons, Grana Padano and white wine.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RISOTTO CON FUNGHI</span> <span class="menu-price">— 840,-</span><div class="menu-details">420g<br>Rice, cooking cream, garlic, chanterelles, porcini mushrooms, champignons, Grana Padano and white wine.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GNOCCHI WITH SPINACH</span> <span class="menu-price">— 860,-</span><div class="menu-details">430g<br>Gnocchi with spinach, domestic cheese, Grana Padano, pesto sauce, garlic and nutmeg.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LASAGNE</span> <span class="menu-price">— 760,-</span><div class="menu-details">380g<br>Lasagne with Bolognese sauce, Grana Padano, béchamel sauce and basil.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MAC&amp;CHEESE</span> <span class="menu-price">— 610,-</span><div class="menu-details">380g<br>Rigati macaroni with Cheddar cheese and béchamel sauce.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">MAIN COURSES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">SOUS VIDE CHICKEN</span> <span class="menu-price">— 1.060,-</span><div class="menu-details">470g<br>300g chicken fillet prepared using the Sous Vide cooking method, baked on the grill, served with grilled vegetables, rice with spinach and carrots.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN CROISSANT</span> <span class="menu-price">— 1.220,-</span><div class="menu-details">410g<br>240g chicken croissant – rolled chicken fillet wrapped in bacon with a filling of peppers, kačkavalj cheese and cured meat. Served with potato wedges and pesto sauce.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GRATINATED CHICKEN</span> <span class="menu-price">— 990,-</span><div class="menu-details">490g<br>200g chicken, champignons, Grana Padano, cooking cream baked with gnocchi.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CURRY CHICKEN</span> <span class="menu-price">— 940,-</span><div class="menu-details">380g<br>200g chicken fillet with vegetables in a spicy curry sauce, served with rice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN IN MUSHROOM SAUCE</span> <span class="menu-price">— 990,-</span><div class="menu-details">450g<br>300g chicken in creamy mushroom sauce, served with crispy seasoned potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN IN IMPERIAL SAUCE</span> <span class="menu-price">— 1.050,-</span><div class="menu-details">490g<br>300g chicken in a sauce made with cooking cream, pickles, mustard and ham, served with crispy seasoned potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TERIYAKI CHICKEN</span> <span class="menu-price">— 960,-</span><div class="menu-details">570g<br>200g chicken fillet in an aromatic sweet sauce with sautéed vegetables, served with rice, coleslaw salad and Greek yogurt.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CRISPY TENDER CHICKEN</span> <span class="menu-price">— 920,-</span><div class="menu-details">340g<br>Chicken coated in a seed mix, served with tartar and sweet chili sauce, with a side of mixed onion rings.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TURKEY WITH FOUR CHEESES</span> <span class="menu-price">— 1.410,-</span><div class="menu-details">450g<br>250g turkey in a creamy four-cheese sauce, served with crispy seasoned potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KARAĐORĐE SCHNITZEL</span> <span class="menu-price">— 1.250,-</span><div class="menu-details">380g<br>170g pork fillet, cured meat, kačkavalj cheese, fries and tartar sauce.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">AROMATIC PORK FILLET</span> <span class="menu-price">— 1.250,-</span><div class="menu-details">480g<br>200g pork fillet with vegetables and baby potatoes in sweet chili sauce, served with mixed salad and sautéed hazelnuts.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PORK RIBS</span> <span class="menu-price">— 1.250,-</span><div class="menu-details">500g<br>400g smoked pork ribs in BBQ sauce, served with potato wedges.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PORK MEDALLIONS WITH CHANTERELLES</span> <span class="menu-price">— 1.710,-</span><div class="menu-details">390g<br>300g marinated pork medallions with chanterelles in demi-glace sauce.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">BEEF CORNER</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">SOTE STROGANOFF</span> <span class="menu-price">— 1.900,-</span><div class="menu-details">380g<br>200g sautéed beefsteak with pickles and champignons in a dark meat sauce, served with rice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KRÄUTER STEAK</span> <span class="menu-price">— 2.420,-</span><div class="menu-details">450g<br>280g marinated beefsteak with seasoned butter and grilled vegetables.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TAGLIATA STEAK</span> <span class="menu-price">— 2.420,-</span><div class="menu-details">450g<br>280g marinated beefsteak with seasoned butter and grilled vegetables.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STEAK IN PEPPER SAUCE</span> <span class="menu-price">— 3.100,-</span><div class="menu-details">480g<br>280g marinated beefsteak in an aromatic mixed pepper sauce, served with baked potatoes, kajmak and ajvar.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STEAK IN TRUFFLE SAUCE</span> <span class="menu-price">— 2.900,-</span><div class="menu-details">480g<br>280g marinated beefsteak in truffle sauce, served with baked potatoes, kajmak and ajvar.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MEDALLIONS IN MUSHROOM SAUCE</span> <span class="menu-price">— 2.420,-</span><div class="menu-details">450g<br>280g marinated beefsteak in mushroom sauce, served with rice.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">FISH DISHES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">TROUT</span> <span class="menu-price">— 3.250,-</span><div class="menu-details">1kg<br>Marinated trout served with potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SEA BREAM</span> <span class="menu-price">— 4.300,-</span><div class="menu-details">1kg<br>Grilled sea bream in marinade, served with potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SEA BASS</span> <span class="menu-price">— 4.300,-</span><div class="menu-details">1kg<br>Grilled sea bass in marinade, served with potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MARINATED SALMON FILLET</span> <span class="menu-price">— 2.300,-</span><div class="menu-details">450g<br>220g salmon fillet served with potatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GRILLED SQUID</span> <span class="menu-price">— 1.850,-</span><div class="menu-details">270ml<br>270g squid served with rice and spinach.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">GRILLED DISHES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">ĆEVAPI – 5 PIECES</span> <span class="menu-price">— 480,-</span><div class="menu-details">150g<br>Grilled meat, served with red cabbage and onion salad, with Dollar Chips on the side.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ĆEVAPI – 10 PIECES</span> <span class="menu-price">— 850,-</span><div class="menu-details">300g<br>Grilled meat, served with red cabbage and onion salad, with Dollar Chips on the side.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLJESKAVICA</span> <span class="menu-price">— 850,-</span><div class="menu-details">300g<br>Grilled meat patty, served with red cabbage and onion salad, with Dollar Chips on the side.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLJESKAVICA WITH KAJMAK</span> <span class="menu-price">— 1.050,-</span><div class="menu-details">300g<br>300g pljeskavica served with kajmak, red cabbage and onion salad, with Dollar Chips on the side.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">UŠTIPCI (1/2)</span> <span class="menu-price">— 950,-</span><div class="menu-details">300g<br>Spicy minced meat bites with kačkavalj cheese, bacon and hot crushed pepper, served with red cabbage and onion salad, with crispy fries on the side.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BEER SAUSAGE MIX</span> <span class="menu-price">— 1.180,-</span><div class="menu-details">300g<br>Mix of seasoned beer sausages and thin grilled sausages – 300g, served with red cabbage and onion salad, mustard and seasoned potato wedges.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MARINATED CHICKEN BREAST (1/2)</span> <span class="menu-price">— 880,-</span><div class="menu-details">300g<br>300g chicken fillet in mustard marinade, served with crispy baby potatoes and a sauce made from cream, champignons and arugula.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN WINGS</span> <span class="menu-price">— 730,-</span><div class="menu-details">450g<br>450g chicken wings in a mustard and BBQ sauce marinade, served with seasoned potato wedges.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ROLLED CHICKEN SKEWER (1/2)</span> <span class="menu-price">— 1.180,-</span><div class="menu-details">400g<br>400g chicken fillet wrapped in bacon, served with Greek sauce and crispy fries.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN DRUMSTICK (1/2)</span> <span class="menu-price">— 950,-</span><div class="menu-details">400g<br>400g chicken drumstick, served with Greek sauce and crispy fries.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SMOKED PORK NECK (1/2)</span> <span class="menu-price">— 1.320,-</span><div class="menu-details">300g<br>300g smoked pork neck, served with crispy baby potatoes and a sauce made from cream, champignons and arugula.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SMOKED PORK HANGER STEAK (1/2)</span> <span class="menu-price">— 1.320,-</span><div class="menu-details">300g<br>300g smoked pork hanger steak, served with crispy baby potatoes and a sauce made from cream, champignons and arugula.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MIXED GRILL FOR TWO PERSONS</span> <span class="menu-price">— 2.600,-</span><div class="menu-details">980g<br>Smoked pork neck, rolled chicken skewer, ćevapi, sausage and Karađorđe schnitzel – 810g, served with seasoned potato wedges.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MIXED GRILL FOR FOUR PERSONS</span> <span class="menu-price">— 4.400,-</span><div class="menu-details">1640g<br>Smoked pork neck, rolled chicken skewer, smoked pork hanger steak, crispy chicken, ćevapi and sausage – 1340g, served with grilled vegetables and seasoned potato wedges.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SIDE SALADS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">ŠOPSKA SALAD</span> <span class="menu-price">— 390,-</span><div class="menu-details">290g<br>Tomato, cucumber, onion and cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SERBIAN SALAD</span> <span class="menu-price">— 360,-</span><div class="menu-details">240g<br>Tomato, cucumber, onion and hot pepper.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GREEK SALAD</span> <span class="menu-price">— 530,-</span><div class="menu-details">260g<br>Mixed green salad, tomato, cucumber, red pepper, red onion, marinated cheese, black and green olives.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MIXED GREEN SALAD</span> <span class="menu-price">— 410,-</span><div class="menu-details">200g<br>Iceberg lettuce, lollo rosso, arugula, lollo bianco, radicchio, parmesan, mixed seeds, cherry tomatoes and horseradish dressing.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VITAMIN SALAD</span> <span class="menu-price">— 440,-</span><div class="menu-details">320g<br>Fresh mixed vegetable salad seasoned with lemon, ginger and olive oil.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TOMATO AND CHEESE</span> <span class="menu-price">— 340,-</span><div class="menu-details">200g<br>Tomato salad with domestic cheese.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CABBAGE SALAD</span> <span class="menu-price">— 290,-</span><div class="menu-details">200g<br>Fresh cabbage salad.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BEETROOT SALAD</span> <span class="menu-price">— 310,-</span><div class="menu-details">150g<br>Seasoned beetroot salad.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PICKLED VEGETABLES</span> <span class="menu-price">— 300,-</span><div class="menu-details">250g<br>Pickled cucumbers, peppers, cauliflower, carrots and green tomatoes.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SOMBORKA PEPPER</span> <span class="menu-price">— 250,-</span><div class="menu-details">120g<br>Hot Somborka pepper from pickled vegetables.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ROASTED PEPPER WITH GARLIC</span> <span class="menu-price">— 390,-</span><div class="menu-details">150g<br>Roasted pepper with garlic.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HOT PEPPER</span> <span class="menu-price">— 140,-</span><div class="menu-details">30g<br>Roasted hot pepper.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OLIVES</span> <span class="menu-price">— 170,-</span><div class="menu-details">50g<br>Marinated olives.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TOMATO SALAD</span> <span class="menu-price">— 310,-</span><div class="menu-details">200g<br>Fresh tomato salad.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CUCUMBER SALAD</span> <span class="menu-price">— 290,-</span><div class="menu-details">200g<br>Fresh cucumber salad.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SIDES AND BREAD</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">GRILLED VEGETABLES</span> <span class="menu-price">— 300,-</span><div class="menu-details">220g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BABY POTATOES WITH ROSEMARY</span> <span class="menu-price">— 390,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FRENCH FRIES</span> <span class="menu-price">— 310,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">POTATO WEDGES</span> <span class="menu-price">— 340,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CRISPY FRIES</span> <span class="menu-price">— 490,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ONION RINGS</span> <span class="menu-price">— 330,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RICE</span> <span class="menu-price">— 210,-</span><div class="menu-details">120g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PARMESAN</span> <span class="menu-price">— 210,-</span><div class="menu-details">30g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KAJMAK</span> <span class="menu-price">— 180,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">AJVAR</span> <span class="menu-price">— 190,-</span><div class="menu-details">50g<br>Ajvar mild or hot, by choice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Homemade Bread Roll 40g</span> <span class="menu-price">— 35,-</span><div class="menu-details">Unleavened wheat dough.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Rustic Bread Roll 40g</span> <span class="menu-price">— 45,-</span><div class="menu-details">Mix of grains and seeds.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Corn Bread Roll 40g</span> <span class="menu-price">— 35,-</span><div class="menu-details">Bread roll made from corn flour.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Rye Bread – slice 55g</span> <span class="menu-price">— 45,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Pizza Bread</span> <span class="menu-price">— 70,-</span><div class="menu-details">Seasoned with rosemary and garlic, or with egg and sesame coating, by choice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Somun</span> <span class="menu-price">— 25,-</span><div class="menu-details">Flatbread made according to a traditional recipe.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">Tortilla</span> <span class="menu-price">— 90,-</span><div class="menu-details">Greek tortilla.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BABY PUREE</span> <span class="menu-price">— 1,-</span><div class="menu-details">130g<br>Freshly prepared vegetable and fruit purees of your choice for your baby.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FLUFFY CHICKIE</span> <span class="menu-price">— 390,-</span><div class="menu-details">270g<br>Breaded chicken sticks with sesame.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GOLDFISH</span> <span class="menu-price">— 560,-</span><div class="menu-details">190g<br>120g fish sticks and fries.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">THREE MUSKETEERS</span> <span class="menu-price">— 340,-</span><div class="menu-details">150g<br>90g grilled meat and fries.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LITTLE HEDGEHOG BOLOGNESE</span> <span class="menu-price">— 380,-</span><div class="menu-details">230g<br>Spaghetti, Bolognese sauce and parmesan.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PEEP PEEP SOUP</span> <span class="menu-price">— 210,-</span><div class="menu-details">200ml<br>Chicken soup.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">PIZZA</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="table-responsive menu-table-wrap"><table class="table menu-table">
+<thead><tr>
+<th>Pizza</th>
+<th>23 cm</th>
+<th>30 cm</th>
+<th>45 cm</th>
+<th>55 cm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<span class="menu-title">MARGHERITA</span><div class="pizza-description">Tomato sauce, cucumber, onion and cheese.</div>
+</td>
+<td class="pizza-price">340,-</td>
+<td class="pizza-price">610,-</td>
+<td class="pizza-price">1.300,-</td>
+<td class="pizza-price">1.940,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">CARNE</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, cured meat, bacon, olives, arugula and cherry tomatoes.</div>
+</td>
+<td class="pizza-price">450,-</td>
+<td class="pizza-price">810,-</td>
+<td class="pizza-price">1.720,-</td>
+<td class="pizza-price">2.570,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">CURED MEAT</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, champignons, olives, cured meat and cream.</div>
+</td>
+<td class="pizza-price">430,-</td>
+<td class="pizza-price">770,-</td>
+<td class="pizza-price">1.650,-</td>
+<td class="pizza-price">2.460,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">CAPRICCIOSA</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, ham and champignons.</div>
+</td>
+<td class="pizza-price">370,-</td>
+<td class="pizza-price">670,-</td>
+<td class="pizza-price">1.420,-</td>
+<td class="pizza-price">2.120,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">GYROS</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, gyros meat, tzatziki, iceberg lettuce and red onion.</div>
+</td>
+<td class="pizza-price">480,-</td>
+<td class="pizza-price">860,-</td>
+<td class="pizza-price">1.840,-</td>
+<td class="pizza-price">2.740,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">SRBIJA</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, cured meat, kulen, bacon, hot peppers and domestic cheese.</div>
+</td>
+<td class="pizza-price">450,-</td>
+<td class="pizza-price">810,-</td>
+<td class="pizza-price">1.720,-</td>
+<td class="pizza-price">2.570,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">VEGETARIJANA</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, grilled vegetables, champignons and red onion.</div>
+</td>
+<td class="pizza-price">330,-</td>
+<td class="pizza-price">590,-</td>
+<td class="pizza-price">1.260,-</td>
+<td class="pizza-price">1.890,-</td>
+</tr>
+<tr>
+<td>
+<span class="menu-title">TUNA</span><div class="pizza-description">Dough, tomato sauce, kačkavalj cheese, tuna and champignons.</div>
+</td>
+<td class="pizza-price">350,-</td>
+<td class="pizza-price">630,-</td>
+<td class="pizza-price">1.340,-</td>
+<td class="pizza-price">1.990,-</td>
+</tr>
+</tbody>
+</table></div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PIROŠKA</span> <span class="menu-price">— 290,-</span><div class="menu-details">310g<br>Dough, tomato sauce, kačkavalj cheese, ham, cream and champignons.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ITALIAN SANDWICH</span> <span class="menu-price">— 460,-</span><div class="menu-details">360g<br>Dough, tomato sauce, cured meat, kačkavalj cheese and cream.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SAVORY PANCAKES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">PANCAKE</span> <span class="menu-price">— 170,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-subheading">SIDES</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CURED MEAT</span> <span class="menu-price">— 170,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HAM</span> <span class="menu-price">— 90,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KULEN</span> <span class="menu-price">— 180,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GYROS PORK MEAT</span> <span class="menu-price">— 330,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">GYROS CHICKEN MEAT</span> <span class="menu-price">— 240,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHICKEN</span> <span class="menu-price">— 190,-</span><div class="menu-details">100g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KAČKAVALJ CHEESE</span> <span class="menu-price">— 120,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CREAM</span> <span class="menu-price">— 50,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CREAM WITH CHAMPIGNONS</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">URNEBES</span> <span class="menu-price">— 110,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RUSSIAN SALAD</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TZATZIKI</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TARTAR SAUCE</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BBQ SAUCE</span> <span class="menu-price">— 60,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SWEET CHILI</span> <span class="menu-price">— 80,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PICKLES</span> <span class="menu-price">— 60,-</span><div class="menu-details">40g</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">SWEET PANCAKES</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">PANCAKE</span> <span class="menu-price">— 170,-</span><div class="menu-details">200g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-subheading">SIDES</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">EUROCREM</span> <span class="menu-price">— 160,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">NUTELLA</span> <span class="menu-price">— 220,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KIT KAT CREAM</span> <span class="menu-price">— 240,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">COCONUT CREAM</span> <span class="menu-price">— 160,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OREO CREAM</span> <span class="menu-price">— 270,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">WHITE BUENO CREAM</span> <span class="menu-price">— 180,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">JAM</span> <span class="menu-price">— 70,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VANILLA FILLING</span> <span class="menu-price">— 110,-</span><div class="menu-details">80g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">APPLE CINNAMON FILLING</span> <span class="menu-price">— 60,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FOREST FRUIT FILLING</span> <span class="menu-price">— 60,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STRAWBERRY FILLING</span> <span class="menu-price">— 60,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHERRY FILLING</span> <span class="menu-price">— 60,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HONEY</span> <span class="menu-price">— 140,-</span><div class="menu-details">75g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">MARINATED CHERRY</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">COCONUT</span> <span class="menu-price">— 30,-</span><div class="menu-details">20g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLAZMA BISCUITS</span> <span class="menu-price">— 50,-</span><div class="menu-details">20g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">WALNUTS</span> <span class="menu-price">— 90,-</span><div class="menu-details">20g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HAZELNUTS</span> <span class="menu-price">— 130,-</span><div class="menu-details">20g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BANANA</span> <span class="menu-price">— 70,-</span><div class="menu-details">60g</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">DESSERTS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">BUTTERSCOTCH</span> <span class="menu-price">— 530,-</span><div class="menu-details">360g<br>Traditional English cake topped with warm chocolate, served with ice cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">APPLE TART</span> <span class="menu-price">— 380,-</span><div class="menu-details">340g<br>Layered apple cake served with vanilla cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHOCOLATE SOUFFLÉ</span> <span class="menu-price">— 480,-</span><div class="menu-details">190g<br>Chocolate soufflé served with chocolate topping and vanilla ice cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TRES LECHES</span> <span class="menu-price">— 430,-</span><div class="menu-details">250g<br>Light milk cake made with three types of milk, topped with caramel.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FRUIT SALAD</span> <span class="menu-price">— 400,-</span><div class="menu-details">250g<br>Mix of fresh fruit. You can order a scoop of ice cream with the fruit salad for an additional charge.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BAKLAVA – WALNUT</span> <span class="menu-price">— 450,-</span><div class="menu-details">Homemade baklava with walnuts and a scoop of ice cream of your choice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">BAKLAVA – PISTACHIO</span> <span class="menu-price">— 490,-</span><div class="menu-details">Homemade baklava with pistachios and a scoop of ice cream of your choice.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CARAMEL CAKE</span> <span class="menu-price">— 410,-</span><div class="menu-details">160g<br>Cake filled and topped with caramel cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PISTACHIO CAKE</span> <span class="menu-price">— 530,-</span><div class="menu-details">160g<br>Creamy cake with fruit filling and pistachio topping.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PASSION FRUIT CAKE</span> <span class="menu-price">— 530,-</span><div class="menu-details">160g<br>Cake with a crushed hazelnut crust and creamy passion fruit filling.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHERRY CAKE</span> <span class="menu-price">— 440,-</span><div class="menu-details">160g<br>Creamy cake with cherry-flavored fruit filling.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">JAFFA CAKE</span> <span class="menu-price">— 410,-</span><div class="menu-details">160g<br>Chocolate cake filled with orange cream.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">ICE CREAM SCOOP</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">VANILLA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHOCOLATE</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ROSÉ</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CREAM BANANA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OREO</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STRACCIATELLA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLAZMA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHEESECAKE</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">JAFFA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KINDER</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HAZELNUT</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LEMON</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VANILLA - MANGO</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VANILLA – RASPBERRY</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KIWI</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FOREST FRUIT</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STRAWBERRY</span> <span class="menu-price">— 150,-</span><div class="menu-details">160g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">YOGURT AMARENA</span> <span class="menu-price">— 150,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">WHIPPED CREAM SCOOP</span> <span class="menu-price">— 70,-</span><div class="menu-details">50g</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">SWEET CONE</span> <span class="menu-price">— 80,-</span>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FLAVORED SWEET CONE</span> <span class="menu-price">— 80,-</span>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">FRUIT CUPS</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">BANANA SPLIT</span> <span class="menu-price">— 590,-</span><div class="menu-details">Three scoops of ice cream, 200g banana, chocolate syrup, whipped cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLAZMA KUP</span> <span class="menu-price">— 560,-</span><div class="menu-details">Two scoops of ice cream (chocolate, hazelnut), ground Plazma biscuits, chocolate and caramel syrup, whipped cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FRUIT KUP</span> <span class="menu-price">— 570,-</span><div class="menu-details">Ice cream (strawberry, kiwi, forest fruit), 150g seasonal fruit, whipped cream.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHOCO FANTASY</span> <span class="menu-price">— 610,-</span><div class="menu-details">Four scoops of ice cream (chocolate, cherry chocolate, Nutella, chocolate cookie), crushed hazelnuts, chocolate syrup.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OREO KUP</span> <span class="menu-price">— 650,-</span><div class="menu-details">Three scoops of Oreo ice cream, Oreo cookies, chocolate syrup.</div>
+</div>
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">MILKSHAKE</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-entry">
+<span class="menu-title">VANILLA</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHOCOLATE</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">ROSÉ</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CREAM BANANA</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OREO</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STRACCIATELLA</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CHEESECAKE</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">JAFFA</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KINDER</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">HAZELNUT</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">LEMON</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VANILLA – MANGO</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">VANILLA – RASPBERRY</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">KIWI</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">FOREST FRUIT</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">STRAWBERRY</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">YOGURT AMARENA</span> <span class="menu-price">— 360,-</span><div class="menu-details">0,30l</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">PLAZMA</span> <span class="menu-price">— 440,-</span><div class="menu-details">0,30l</div>
+</div>
+ 
+ 
+
+</div>
+<div class="accordion-header" style="background-image: url(jelovnik.png); background-repeat: no-repeat; background-size: cover; background-position: center center; opacity: 1; visibility: inherit; z-index: 20;">
+<div class="accordion-icon">
+<i class="accordion-closed icon-ok-circle"></i><i class="accordion-open icon-remove-circle"></i>
+</div>
+<div class="accordion-title">MENU</div>
+</div>
+<div class="accordion-content" style="display: none;">
+<div class="menu-subheading">Welcome to a world of flavors that awaken all your senses!</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<p class="menu-note">Our menu has been carefully crafted to combine tradition and modern gastronomy, turning every meal into a unique experience. We believe that food is not just a necessity, but a moment of enjoyment — an opportunity to relax and indulge in aromas that tell their own story.</p>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<p class="menu-note">Our selection includes a variety of appetizers and soups that bring the warmth of homemade cuisine, rich main courses prepared from carefully selected meat, fish, and vegetables, as well as light and refreshing salads. Every dish is created with passion and creativity by our chefs to satisfy even the most refined tastes.</p>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<p class="menu-note">Our signature specialties are designed to surprise and delight — a fusion of familiar recipes and modern culinary techniques that create a unique balance of flavors. Our desserts are the perfect finale to every visit: delicate, creamy, and irresistibly sweet, crafted to complete the experience and leave a lasting impression of satisfaction.</p>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<p class="menu-note">Paired with a rich selection of wines, refreshing beverages, and aromatic coffees, every meal finds its perfect companion. Whether you are joining us for a quick bite, a romantic dinner, or a celebration with loved ones, our menu ensures you will discover something that wins you over from the very first bite.</p>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-subheading">Featured Specials!</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">OATMEAL WITH FRUIT</span> <span class="menu-price">— 530,-</span><div class="menu-details">Oat flakes, chia seeds, flax seeds, almonds, Greek yogurt, almond milk, fresh fruit – banana, pineapple, mixed forest berries (strawberry, blueberry, blackberry), honey.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">CROISSANT SANDWICH WITH PROSCIUTTO</span> <span class="menu-price">— 590,-</span><div class="menu-details">Croissant from our bakery, cream cheese spread, prosciutto, arugula, mozzarella.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RAMEN NOODLES WITH CHICKEN</span> <span class="menu-price">— 1.090,-</span><div class="menu-details">Ramen noodles prepared with chicken and fresh vegetables in an Asian style.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RAMEN NOODLES WITH SHRIMP</span> <span class="menu-price">— 1.850,-</span><div class="menu-details">Ramen noodles prepared with shrimp, broccoli, and fresh vegetables in an Asian style.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">TROPICO STRAWBERRY</span> <span class="menu-price">— 480,-</span><div class="menu-details">Strawberry, banana, orange.</div>
+</div>
+<div class="divider" style="margin-bottom: 5px; margin-top: 5px;"></div>
+<div class="menu-entry">
+<span class="menu-title">RASPBERRY MIX</span> <span class="menu-price">— 480,-</span><div class="menu-details">Raspberry, banana, almond milk, chia seeds.</div>
+</div>
+</div>
+</div>
+						
+						</div>
+<!-- #portfolio end -->
+
+						<div class="pagination-container topmargin mb-0">
+							<ul class="pagination m-0"></ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		
+		<footer id="footer" class="bg-white border-0">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<!-- <div class="footer-widgets-wrap">
+
+					<div class="row">
+
+						<div class="col-lg-2 col-md-2 col-6 pe-4">
+							<div class="widget clearfix">
+
+								<h4 class="ls0 nott">Download App</h4>
+								<a href="#"><img src="demos/articles/images/appstore.png" alt="App Link"></a>
+								<a href="#"><img src="demos/articles/images/googleplay.png" alt="App Link" class="mt-2"></a>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-6">
+							<div class="widget clearfix">
+
+								<h4 class="ls0 nott">Support</h4>
+
+								<ul class="list-unstyled ms-0">
+									<li class="mb-2"><a href="#" class="text-black-50">Home</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">About</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">FAQs</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Support</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-6 mt-4 mt-md-0">
+							<div class="widget clearfix">
+
+								<h4 class="ls0 nott">Trending</h4>
+
+								<ul class="list-unstyled ms-0">
+									<li class="mb-2"><a href="#" class="text-black-50">Shop</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Portfolio</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Blog</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-6 mt-4 mt-md-0">
+							<div class="widget clearfix">
+
+								<h4 class="ls0 nott">Features</h4>
+
+								<ul class="list-unstyled ms-0">
+									<li class="mb-2"><a href="#" class="text-black-50">Help Center</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Paid with Moblie</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Status</a></li>
+									<li class="mb-2"><a href="#" class="text-black-50">Contact Support</a></li>
+								</ul>
+
+							</div>
+						</div> -->
+
+						<!-- <div class="col-lg-4 col-md-4">
+							<div id="instagram" class="widget clearfix">
+
+								<h4 class="ls0 nott">Instagram Photos</h4>
+								<div id="instagram-photos" class="instagram-photos masonry-thumbs grid-4" data-user="blog.canvastemplate" data-count="8"></div>
+
+							</div>
+						</div> -->
+					</div>
+
+				</footer>
+</div>
+
+			
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bg-light">
+
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-sm-4 d-flex justify-content-sm-start mb-3 mb-sm-0 text-black-50">
+							Copyrights © 2026 All Rights Reserved Vega.
+						</div>
+						<div class="col-sm-4 d-flex justify-content-sm-center mb-3 mb-sm-0">
+							<a href="https://sr-rs.facebook.com/vegafoodstore/" target="_blank" class="social-icon si-small si-colored si-facebook" title="Facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+							<!-- <a href="https://twitter.com/__semicolon" target="_blank" class="social-icon si-small si-colored si-twitter" title="Twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a> -->
+							<a href="https://www.youtube.com/@vegafoodstore2932" target="_blank" class="social-icon si-small si-colored si-youtube" title="youtube">
+								<i class="icon-youtube"></i>
+								<i class="icon-youtube"></i>
+							</a>
+							<a href="https://www.instagram.com/vegafoodstore/" target="_blank" class="social-icon si-small si-colored si-instagram" title="instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+						</div>
+						<div class="col-sm-4 d-flex justify-content-sm-end">
+							<div class="copyright-links">
+<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a> / <a href="https://www.canva.com/design/DAFE5KppDWc/aEQEwuY9CK1zmD3c9CjugQ/watch?utm_content=DAFE5KppDWc&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink">Vega TV</a>
+</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+<!-- #copyrights end -->
+
+		<!-- #footer end -->
+
+	<!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	
+	
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	
+	<!-- ADD-ONS JS FILES -->
+	
+	
+	<!-- Footer Scripts
+	============================================= -->
+	
+
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- ADD-ONS JS FILES -->
+	<script src="include/rs-plugin/js/pixi.min.js"></script>
+	<script src="include/rs-plugin/js/addons/revolution.addon.liquideffect.min.js"></script>
+
+	<!-- SLIDER REVOLUTION EXTENSIONS  -->
+	<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		var revapi2,
+		tpj;
+		var $ = jQuery.noConflict();
+		(function() {
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
+			function onLoad() {
+				if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+
+				if(tpj("#rev_slider_2_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				}else{
+					revapi2 = tpj("#rev_slider_2_1").show().revolution({
+						sliderType:"standard",
+						jsFileLocation:"include/rs-plugin/js/",
+						sliderLayout:"fullscreen",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							mouseScrollReverse:"default",
+							onHoverStop:"off",
+							arrows: {
+								style:"uranus",
+								enable:true,
+								hide_onmobile:false,
+								hide_onleave:false,
+								tmp:'',
+								left: {
+									h_align:"right",
+									v_align:"bottom",
+									h_offset:80,
+									v_offset:30
+								},
+								right: {
+									h_align:"right",
+									v_align:"bottom",
+									h_offset:20,
+									v_offset:30
+								}
+							}
+						},
+						responsiveLevels:[1200,992,768,576],
+						visibilityLevels:[1200,992,768,576],
+						gridwidth:[1200,992,768,576],
+						gridheight:[868,768,960,720],
+						lazyType:"all",
+						shadow:0,
+						spinner:"off",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"on",
+						fullScreenAutoWidth:"off",
+						fullScreenAlignForce:"off",
+						fullScreenOffsetContainer: "0",
+						fullScreenOffset: "",
+						disableProgressBar:"off",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}; /* END OF revapi call */
+
+				RsLiquideffectAddOn(tpj, revapi2);
+
+				if(typeof ExplodingLayersAddOn !== "undefined") ExplodingLayersAddOn(tpj, revapi2);
+			}; /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
+
+</body>
+</html>
+
+
